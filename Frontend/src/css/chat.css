@@ -1,0 +1,121 @@
+.chat-page {
+    display: flex;
+    height: 100vh; 
+}
+
+.input-container {
+    position: fixed;
+    bottom: 0;
+    left: 35%; /* Centers the input horizontally */
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 20px;
+    border-radius: 30px;
+    border:2px solid white;
+    margin: 10px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-right: 50px; /* Makes space for the button */
+    color: white;
+}
+
+.input-container input::placeholder {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.input-container input:focus {
+    outline: none;
+}
+
+.send-btn {
+    position: absolute;
+    right: 30px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.chat {
+    max-height: calc(100vh - 250px); /* Increase space from the top */
+    width: 438%;
+    overflow-y: auto; /* Adds scrolling when there are many messages */
+    padding-bottom: 80px; /* Space for the input */
+    margin: 0 auto; /* Centers the chat container horizontally */
+    overflow-x: hidden;
+    margin-top: 80px; /* Optional: Add margin-top to provide additional spacing */
+}
+
+
+
+.chat-container {
+    margin-left: 5%;
+    overflow-y: auto;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.my-message {
+    text-align: left;
+    margin-left: 60%;
+    padding: 10px;
+    border-radius: 30px;
+    width: 30%;
+    background-color: gray;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+.received-message {
+    text-align: left;
+    margin-right: 10%;
+    padding: 10px;
+    border-radius: 30px;
+    width: 30%;
+    background-color: gray;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+.userDetail{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 65%;
+    z-index: 1;
+    gap: 10px;
+}
+
+.userDetail img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.userDetail h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+}

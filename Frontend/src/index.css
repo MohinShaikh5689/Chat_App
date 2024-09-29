@@ -1,0 +1,18 @@
+body{
+    background-image: url('/assets/1354394.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #c19417;
+    border-radius: 20px;
+   
+  }

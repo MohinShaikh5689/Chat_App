@@ -1,0 +1,110 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto; /* Center the container */
+    width: 80%;
+    min-height: calc(100vh - 20px);
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background */
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    transition: transform 0.2s; /* Transition for hover effect */
+  }
+  
+  .container:hover {
+    transform: scale(1.02); /* Slightly increase size on hover */
+  }
+  
+  .container h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center; /* Center the heading */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add text shadow */
+  }
+  
+  .container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid white; /* Add a border to the image */
+    margin-bottom: 20px;
+    transition: transform 0.2s; /* Transition for hover effect */
+  }
+  
+  .container img:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+  }
+  
+  .container p {
+    font-size: 1.2rem; /* Increase font size for better readability */
+    margin: 5px 0; /* Space between paragraphs */
+    text-align: center; /* Center-align text */
+  }
+  
+  strong {
+    color: #ffd700; /* Gold color for emphasis */
+  }
+  
+  .edit-button {
+    background-color: #ffd700; /* Gold color */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+    background-color: #ffcc00; /* Lighter gold on hover */
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.edit-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.edit-form button {
+    background-color: #28a745; /* Green color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-form button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.container input {
+    width: 80%; /* Adjust width as needed */
+    padding: 10px;
+    margin: 10px 0; /* Space between input fields */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    color: #333; /* Text color */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    transition: border-color 0.3s ease; /* Transition for border color */
+}
+
+/* Focus effect */
+.container input:focus {
+    border-color: #007BFF; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
